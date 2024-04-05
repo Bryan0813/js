@@ -22,6 +22,8 @@ let frutasArrayObject = [
 ]; // Array de objetos
 
 // Funciones
+
+//Devolver la suma
 function miFuncion(a, b){
     return a + b;
 }

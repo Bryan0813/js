@@ -1,14 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS</title>
+    <title>DOM</title>
 </head>
-
 <body>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Descripcion</th>
+                <th>URL</th>
+            </tr>
+        </thead>
+        <tbody id="Table_content">
+            <tr>
+                <td></td>
+            </tr>
+        </tbody>
+        <script>
+            const info = [
+                    {
+                id: crypto.randomUUID(),
+                nombre: '',
+                descripcion: '',
+                url: 'urlDeImagen',
+                habilitado: true
+            },
+            {
+                id: crypto.randomUUID(),
+                nombre: '',
+                descripcion: '',
+                url: '',
+                habilitado: false
+            },
+            {
+                id: crypto.randomUUID(),
+                nombre: '',
+                descripcion: '',
+                url: '',
+                habilitado: true
+            },
+            {
+                id: crypto.randomUUID(),
+                nombre: '',
+                descripcion: '',
+                url: '',
+                habilitado: true
+            },
+            {
+                id: crypto.randomUUID(),
+                nombre: '',
+                descripcion: '',
+                url: '',
+                habilitado: false
+            },
+            {
+                id: crypto.randomUUID(),
+                nombre: '',
+                descripcion: '',
+                url: '',
+                habilitado: false
+            },
+            {
+                id: crypto.randomUUID(),
+                nombre: '',
+                descripcion: '',
+                url: '',
+                habilitado: true
+        }
 
+
+                ]
+
+
+
+            const $Table_content = document.getElementById("Table-content")
+            console.log($Table_content)
+
+            info.forEach(element => {
+                console.log(element.id)
+                $Table_content.innerHTML += '${element.id}'
+            })
+        </script>
+    </table>
 </body>
-
 </html>
